@@ -1,0 +1,46 @@
+.about_me{
+    text-align: center;
+    color:  gray;
+}
+
+.name{
+    text-align: center;
+    color: gray;
+}
+
+.nick_name{
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}
+.picture{
+    padding: 20px 0px 0px 20px;
+    margin: 0 auto;
+    width: 260px;
+}
+
+.div_text{
+    border-radius: 10px;
+    padding: 10px 0px 0px 20px;
+    width: 650px;
+    height: 300px;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.wrap{
+    width: 640px;
+}
+
+.div_picture{
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+body{
+    background-color:blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+}
