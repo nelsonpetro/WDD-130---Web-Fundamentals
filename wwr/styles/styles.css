@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.card-img{
+    width: 400px;
+}
+
+.social img{
+    width: 30px;
+}
+
+.mountains{
+    width: 600px;
+}
+
+.icon{
+    width: 50px;
+}
