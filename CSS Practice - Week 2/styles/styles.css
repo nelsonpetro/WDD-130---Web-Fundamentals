@@ -1,3 +1,30 @@
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+main p {
+    width: 80%;
+    margin: 50px auto;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*
 body{
     text-align: center;
 }
@@ -39,3 +66,4 @@ footer {
     background-color: white;
     color: steelblue;
 }
+*/
