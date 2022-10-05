@@ -3,22 +3,21 @@ header{
     align-items: center;
 }
 
-.logo{
-    width: 150px;
+img {
+    width: 80%;
 }
 
-.card-img{
-    width: 400px;
+p {
+    width: 80%;
 }
 
-.social img{
-    width: 30px;
+a {
+    font-size: 1.5em;
 }
 
-.mountains{
-    width: 600px;
-}
 
-.icon{
-    width: 50px;
-}
+
+
+
+
+
