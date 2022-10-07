@@ -11,10 +11,21 @@ main p {
 
 a {
     font-size: 1.5em;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
 }
 
 h1 {
     text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
 }
 
 nav, footer {
