@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+nav{
+    flex-direction: row;
+}
+
 nav a{
     text-align: center;
     color: #ffd166;
