@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+header .logo{
+    width: 80px;
+}
+
 nav a{
     text-align: center;
     color: #ffd166;
@@ -101,8 +105,8 @@ header{
     color: #23878a;
 }
 
-.logo{
-    width: 150px;
+.rivers-card, .camping-card, .rapids-card{
+    color: #23878a;
 }
 
 .card-img{
@@ -117,6 +121,6 @@ header{
     width: 600px;
 }
 
-.icon{
+.logo, .icon{
     width: 80px;
 }
