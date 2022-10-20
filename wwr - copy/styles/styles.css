@@ -26,10 +26,6 @@ header{
     justify-content: center;
 }
 
-nav{
-    display: inline;
-}
-
 nav a{
     color: #ffd166;
     text-decoration: none;
