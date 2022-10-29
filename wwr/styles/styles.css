@@ -66,7 +66,7 @@ nav a:hover{
 }
 
 .book, .join{
-    background-color: #23878a;
+    background-color: #1A3D77;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -103,12 +103,13 @@ nav a:hover{
 }
 
 .msg{
-    background-color: #1A3D77;
+    background-color: #23878a;
     padding: 35px;
     margin-top: 50px;
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
+    border: 8px solid #1A3D77;
 }
 
 .msg h2{
@@ -181,7 +182,7 @@ footer .social img{
     grid-column: 1/11;
     grid-row: 4/9;
     height: 725px;
-    background-color: #23878a;
+    background-color: #1A3D77;
     z-index: -1;
 }
 
@@ -249,7 +250,7 @@ h4{
 .mountains{
     width: 100%;
     margin-top: 50px;
-    border: 8px solid #1A3D77;
+    border: 8px solid #23878a;
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
