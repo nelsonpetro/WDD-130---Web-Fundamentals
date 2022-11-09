@@ -42,20 +42,20 @@ body{
 #title{
     margin: 0;
     padding: 0;
-    font-size: 3em;
+    font-size: 2.6vw;
     grid-row: 2/3;
 }
 
 #subtitle{
     padding: 0;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.8vw;
     grid-row: 1/2;
     color: #3f5b8b;
 }
 
 #content p{
-    font-size: 1.3em;
+    font-size: 1.3vw;
     grid-row: 3/10;
     text-align: center;
     padding: 0px 30px 0px 30px;
