@@ -5,7 +5,7 @@ body{
     margin: 0;
     font-family: 'Karla', 'Work Sans', sans-serif;
     background-color: white;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 header{
@@ -22,15 +22,16 @@ nav{
 }
 
 nav a{
+    display: flex;
+    align-items: center;
+    padding-left: calc(0.5em + 1.5vmin);
+    padding-right: calc(0.5em + 1.5vmin);
     color: #ffd166;
-    font-size: 1.9rem;
     font-weight: 600;
-    padding: 50px;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
-    vertical-align: top;
     transition: transform 0.2s;
+    font-size: calc(0.5em + 1.5vmin);
 }
 
 nav a:hover{
@@ -40,7 +41,7 @@ nav a:hover{
 }
 
 .logo{
-    width: 120px;
+    width: 8vh;
 }
 
 #logo_link{
@@ -64,13 +65,13 @@ nav a:hover{
 }
 
 .container h1{
-    font-size: 8rem;
+    font-size: 5vw;
     margin: 0;
 }
 
 .container h4{
     width:fit-content;
-    font-size: 6rem;
+    font-size: 3vw;
     margin: 30px auto;
     padding: 20px;
     border: solid white 5px;
