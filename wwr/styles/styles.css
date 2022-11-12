@@ -29,7 +29,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: rgb(26, 61, 119, 0.7);
+    background: linear-gradient(to bottom, rgb(26, 61, 119) 20%,rgba(0,0,0,0) 100%);
 }
 
 nav{
