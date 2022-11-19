@@ -4,11 +4,11 @@ body{
 }
 
 #main-logo img{
-    width: 300px;
+    width: 30vmax;
 }
 
 #hero-img img{
-    width: 700px;
+    width: 70vw;
 }
 
 .second-img img{
@@ -16,7 +16,7 @@ body{
 }
 
 #third-img img{
-    width: 700px;
+    width: 70vw;
 }
 
 #logo-link img{
