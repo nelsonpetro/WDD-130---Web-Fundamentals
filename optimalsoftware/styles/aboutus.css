@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    color: #24242e
+}
+
+#main-logo img{
+    width: 300px;
+}
+
+#hero-img img{
+    width: 700px;
+}
+
+#logo-link img{
+    width: 200px;
+}
+
+.far, .fas .fab {
+    font-family: "Font Awesome 5 Free";
+}
+
+.v-img img{
+    width: 150px;
+}
+
