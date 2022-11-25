@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #000000   ;
+  --primary-color: #000000  ;
   --secondary-color: #FFFFFF ;
-  --accent1-color: #343434;
-  --accent2-color: #f1d624;
+  --accent1-color: #0075B1;
+  --accent2-color: #F1D624;
   --accent3-color: #FF725E;
 
   /* change the values below to your chosen font(s) */
@@ -20,11 +20,11 @@ Fonts are separated by a | */
   --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
   --paragraph-color-on-white: #343434; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #000000;
+  --paragraph-background-color: #0075B1;
   --nav-link-color: #FFFFFF;
   --nav-background-color: #000000;
-  --nav-hover-link-color: #000000;
-  --nav-hover-background-color: #f1d624;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #0075B1;
 }
 
 
