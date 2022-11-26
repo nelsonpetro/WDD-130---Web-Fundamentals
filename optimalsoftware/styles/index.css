@@ -87,6 +87,7 @@ form.search button {
     margin-left: 20px;
     margin-right: 20px;
     grid-template-columns: 1fr 1fr;
+    grid-gap: min(100px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
 }
 
 #hero-img img{
@@ -105,24 +106,13 @@ form.search button {
 }
 
 #hero-button{
-    text-align: center;
-}
-
-#hero-button{
     margin-top: min(40px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    text-align: center;
 }
 
 #hero-button:hover .w-span{
     color: white;
     transition: color 0.3s ease-out;
-}
-
-#hero-button a{
-    color: white;
-    border-radius: 8px; 
-    padding: 10px 25px;
-    background-color: #FF725E;
-    text-decoration: none;
 }
 
 .w-span{
@@ -140,7 +130,8 @@ form.search button {
 #second-part{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 90vmin;
+    height: 100vmin;
+    align-items: center;
 }
 
 #second-text{
@@ -148,34 +139,46 @@ form.search button {
 }
 
 #second-text h1{
-    font-size: calc(80px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: black;
+    font-size: calc(130px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Fira Code', monospace;
     
 }
 
 #second-text h2{
+    color: white;
     font-size: calc(30px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Fira Code', monospace;
     margin-bottom: min(100px,max(calc( (100vw - 100px) / 2.8 + 100px ),100px));
 }
 
-#images-container{
-    grid-row: 2;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    gap: min(100px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
-    justify-content: center;
-    align-self: flex-start;
+#second-text:hover h2{
+    color:#FF725E;
+    transition: color 0.2s ease-out;
 }
 
-.second-img{
+#image-container img{
+    max-width: min(720px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+
+#image-container p{
+    grid-column: 2/3;
+    font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     align-self: center;
     justify-self: center;
 }
 
-.second-img img{
-    max-width: min(180px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+#image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: min(100px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    justify-content: center;
+    align-content: center;
+    padding-left: min(50px,max(calc( (100vw - 1310px) / 1.5 + 15px ),15px));
+    padding-right: min(80px,max(calc( (100vw - 1310px) / 1.5 + 15px ),15px));
 }
 
 #third-part{
@@ -223,6 +226,15 @@ form.search button {
     color: white;
 }
 
+.f-span{
+    color: black;
+}
+
+#contact-links a:hover .f-span, #contact-links a:hover{
+    color: #FF725E;
+    transition: color 0.3s ease-out;
+}
+
 #footer-nav{
     text-align: center;
     grid-row: 1;
@@ -243,6 +255,11 @@ form.search button {
     font-size: calc(15px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
+#footer-nav a:hover .f-span, #footer-nav a:hover{
+    color: #FF725E;
+    transition: color 0.3s ease-out;
+}
+
 #logo-link img{
     max-width: min(320px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
 }
@@ -260,7 +277,6 @@ form.search button {
 }
 
 .far, .fas .fab {
-
     font-family: "Font Awesome 5 Free";
 }
 
