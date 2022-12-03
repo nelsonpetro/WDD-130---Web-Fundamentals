@@ -12,6 +12,7 @@ body{
 }
 
 #header-content{
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;

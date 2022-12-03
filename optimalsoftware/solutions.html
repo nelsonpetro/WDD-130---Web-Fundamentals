@@ -11,26 +11,24 @@
     </head>
 <body>
     <header>
-        <div id="header-content">
-            <a id="main-logo" href="index.html">
-                <img src="images/logo-banner-whiteb.png" alt="logo-banner">
-            </a>
-            <nav id="main-menu">
-                <div id="menu-container">
-                    <ul id="menu" class="menu">
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="solutions.html">Solutions</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="aboutus.html">About Us</a>
-                        </li>
-                    </ul>
+        <header>
+            <div id="header-content">
+                <div id="main-logo">
+                    <a id="main-logo-link" href="index.html">
+                        <img src="images/logo-banner-transp.png" alt="logo-banner">
+                    </a>
                 </div>
-            </nav>
-        </div>
+                <nav id="main-menu">
+                    <a href="index.html">Home</a>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="aboutus.html">About Us</a>
+                </nav>
+                <form class="search">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </header>
     </header>
     <main>
         <section id="hero-block">
@@ -43,7 +41,13 @@
                 </p>
                 <div id="hero-button">
                     <a href="index.html">
+                        <span class="w-span">
+                            <
+                        </span>
                         Schdule an appoinment
+                        <span class="w-span">
+                            />
+                        </span>
                     </a>
                 </div>
             </div>
@@ -51,8 +55,11 @@
                 <img src="images/solutions1.png" alt="computer-code">
             </div>
         </section>
+        <div class="line-container">
+            <hr class="h-line">
+        </div>
         <div id="solutions-desc">
-            <section>
+            <section class="sol-content">
                 <div class="img-l">
                     <img src="images/web-dev.png" alt="Web Development">
                 </div>
@@ -65,7 +72,7 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section class="sol-content">
                 <div class="text-l">
                     <h1>
                         Database design
@@ -78,7 +85,7 @@
                     <img src="images/db-dev.png" alt="Database Design">
                 </div>
             </section>
-            <section>
+            <section class="sol-content">
                 <div class="img-l">
                     <img src="images/erp.png" alt="ERP">
                 </div>
@@ -91,7 +98,7 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section class="sol-content">
                 <div class="text-l">
                     <h1>
                         Mobile Apps
@@ -105,8 +112,11 @@
                 </div>
             </section>
         </div>
+        <div class="line-container">
+            <hr class="h-line">
+        </div>
         <div id="final-content">
-            <section>
+            <section id="f-container">
                 <div id="f-img">
                     <img src="images/solutions3.png" alt="Computer Coding">
                 </div>
@@ -114,11 +124,17 @@
                     <h1>
                         We deliver top quality solutions for world-class clients.
                     </h1>
-                </div>
-                <div id="f-button">
-                    <a href="index.html">
-                        Schdule an appoinment
-                    </a>
+                    <div id="f-button">
+                        <a href="index.html">
+                            <span class="w-span">
+                                <
+                            </span>
+                            Start your journey
+                            <span class="w-span">
+                                />
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -127,24 +143,15 @@
         <div id="footer-content">
             <div id="footer-nav">
                 <nav id="footer-links">
-                    <ul id="links" class="menu">
-                        
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="solutions.html">Solutions</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="aboutus.html">About Us</a>
-                        </li>
-                    </ul>
+                    <a href="index.html"><span class="f-span"><</span>Home<span class="f-span">/></span></a>
+                    <a href="solutions.html"><span class="f-span"><</span>Solutions<span class="f-span">/></span></a>
+                    <a href="aboutus.html"><span class="f-span"><</span>About Us<span class="f-span">/></span></a>
                 </nav>
             </div>
             <div id="service-links">
                 <div id="footer-logo">
                     <a id="logo-link" href="index.html">
-                        <img src="images/logo-banner-whiteb.png" alt="logo-banner">
+                        <img src="images/logo-banner-transp.png" alt="logo-banner">
                     </a>
                     <p>Optimal Software &copy; 2022</p>
                 </div>
@@ -152,21 +159,45 @@
             <div id="contact-links">
                 <div class="contact-links">
                     <a href="https://www.facebook.com/nelsonpetrodoria/" target="_blank" class="btn contact-det">
+                        <span class="f-span">
+                            <
+                        </span>
                         <i class="fab fa-facebook-square"></i>
                         Facebook
+                        <span class="f-span">
+                            />
+                        </span>
                     </a>
                     <a href="https://twitter.com/NelsonPetro_" target="_blank" class="btn contact-det">
+                        <span class="f-span">
+                            <
+                        </span>
                         <i class="fab fa-twitter"></i>
                         Twitter
+                        <span class="f-span">
+                            />
+                        </span>
                     </a>
-                    <a href="https://www.freecodecamp.org/fcc30470184-f799-445f-b993-b7d6e1d6c1c1" target="_blank" class="btn contact-det">
-                        <i class="fas fa-code"></i>
-                        FreeCodeCamp Profile
+                    <a href="https://www.linkedin.com/in/nelsonpetro/" target="_blank" class="btn contact-det">
+                        <span class="f-span">
+                            <
+                        </span>
+                        <i class="fab fa-linkedin"></i>
+                        Linkedin
+                        <span class="f-span">
+                            />
+                        </span>
                     </a>
                     <a href="" target="_blank" class="btn contact-det">
+                        <span class="f-span">
+                            <
+                        </span>
                         <i class="fas fa-at"></i>
                         Gmail
-                    </a>
+                        <span class="f-span">
+                            />
+                        </span>
+                    </a>            
                 </div>
             </div>
         </div>
