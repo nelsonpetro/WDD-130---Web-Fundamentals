@@ -1075,7 +1075,7 @@ input::placeholder{
     }
 
     form.search-drop input[type=text] {
-        max-width: min(200px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(180px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
         font-size: 14px;
         border: 1px solid white;
