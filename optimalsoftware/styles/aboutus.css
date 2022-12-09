@@ -1,22 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body{
-    background-color: white;
-    color: #24242e
+    font-family: 'Source Code Pro', monospace;
+    background-color: #000;
+    background-image: linear-gradient(45deg, #333333 0%, #012626 100%);
+}
+
+#header-content{
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#header-content nav{
+    width: 100%;
+}
+
+#header-content nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: min(15px,max(calc( (100vw - 900px) / 1.5 + 8px ),8px));;
+    text-align: center
+}
+
+#header-content nav ul li{
+    padding: min(25px,max(calc( (100vw - 900px) / 1.5 + 10px ),10px));
+    list-style-type: none;
+    transition: ease-in-out 0.2s;
+}
+
+#header-content nav ul li a{
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: calc(8px + (24 - 8) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;    
+}
+
+#header-content nav ul li:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #FF725E;
+    transition: color 0.2s ease-out;
+}
+
+#main-logo{
+    padding: min(20px,max(calc( (100vw - 900px) / 1.5 + 10px ),10px));
+    justify-self: start;
+    position: relative;
 }
 
 #main-logo img{
-    width: 300px;
+    max-width: min(280px,max(calc( (100vw - 400px) / 3.5714285714 + 164px ),164px));
+}
+
+form.search input[type=text] {
+    max-width: min(200px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.search button {
+    max-width: min(50px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #FF725E;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    display: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(45deg, #333333 0%, #012626 100%);
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#hero-block{
+    margin-top: 15vmin;
+    color: white;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: min(50px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+}
+
+#hero-img{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
 }
 
 #hero-img img{
+    max-width: min(600px, max(calc( (100vw - 100px) / 2.4 + 160px ),160px));
+}
+
+#hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+#hero-text h2{
+    font-size: calc(14px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Fira Code', monospace;
+}
+
+#hero-text p{
+    margin-bottom: 2.5vh;
+    font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+}
+
+#hero-button a{
+    font-size: calc(6px + (22 - 6) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+    border-radius: 8px; 
+    padding: 10px 10px;
+    background-color: #FF725E;
+    text-decoration: none;
+}
+
+#hero-button:hover .w-span{
+    color: white;
+    transition: color 0.3s ease-out;
+}
+
+.w-span{
+    color: #FF725E;
+}
+
+#f-text-sec{
+    margin-top: 40px;
+    grid-column: 1/3;
+    grid: 2/3;
+    text-align: center;
+}
+
+#first-text h2{
+    margin-bottom: 2vh;
+    font-size: calc(14px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Fira Code', monospace;
+    color: white;
+}
+
+#first-text p{
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    color: white;
+}
+
+.h-line{
+    background-color:white;
+    height: 0.5vh;
     width: 70vw;
+    margin: 0 auto;
+}
+
+.line-container{
+    margin-top: 12vmin;
+    margin-bottom: 7vmin;
+}
+
+#why-os{
+    align-items: center;
+    justify-items: center;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+}
+#why-os h2{
+    font-size: calc(14px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-row: 1/2;
+}
+
+#cards{
+    text-align: center;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: calc(6px + (28 - 6) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 2vmin;
+}
+
+.card-content p{
+    font-size: calc(6px + (18 - 6) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 2vmin;
+}
+
+#card1{
+    grid-column: 1/2;
+}
+
+#card2{
+    grid-column: 2/3;
+}
+
+#card3{
+    grid-column: 3/4;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: min(330px,max(calc( (100vw - 400px) / 3 + 164px ),164px));
+    height: min(330px,max(calc( (100vw - 400px) / 3 + 164px ),164px));
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    display: flex;
+    background-color: rgb(0 0 0 / 40%);
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front img{
+    width: 100%;
+    padding: 25px;
+}
+  
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h3, .flip-card-back p{
+    padding: 10px;
+}
+
+#story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 10vmin;
+    align-items: center;
+    justify-items: center;
+}
+
+#story h1{
+    color: white;
+    font-size: calc(14px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#story p{
+    color: white;
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#story-span{
+    color: #FF725E;
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#story1{
+    padding-left: 25vmin;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#story2{
+    padding-right: 25vmin;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+#values{
+    margin-bottom: 10vmin;
+}
+
+#values h1{
+    text-align: center;
+    color: white;
+    font-size: calc(14px + (70 - 14) * ((100vw - 300px) / (1600 - 300)));
+    
+}
+
+#v-cards{
+    color: white;
+    margin-top: 5vmin;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10vmin;
+    padding-left: 25vmin;
+    padding-right: 25vmin;
+}
+
+#v-cards h3{
+    font-size: calc(6px + (28 - 6) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 2vmin;
+}
+
+#v-cards p{
+    font-size: calc(6px + (18 - 6) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 2vmin;
+}
+
+#efficiency{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: min(15px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    background-color: rgba(19, 44, 23, 0.4);
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#twork{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: min(15px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    background-color: rgba(19, 44, 23, 0.4);
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#client{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: min(15px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    background-color: rgba(19, 44, 23, 0.4);
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#transparency{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: min(15px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    background-color: rgba(19, 44, 23, 0.4);
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#footer-content{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+.f-span{
+    color: black;
+}
+
+#contact-links a:hover .f-span, #contact-links a:hover{
+    color: #FF725E;
+    transition: color 0.3s ease-out;
+}
+
+#footer-nav{
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+}
+
+#service-links{
+    grid-row: 1/3;
+    grid-column: 1;
+    align-self: center;
+}
+
+#footer-nav a{
+    text-decoration: none;
+    color: white;
+    padding: min(50px,max(calc( (100vw - 100px) / 3 + 100px ),100px));
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#footer-nav a:hover .f-span, #footer-nav a:hover{
+    color: #FF725E;
+    transition: color 0.3s ease-out;
 }
 
 #logo-link img{
-    width: 200px;
+    max-width: min(240px,max(calc( (100vw - 400px) / 3.6 + 164px ),164px));
 }
 
-.far, .fas .fab {
-    font-family: "Font Awesome 5 Free";
+#contact-links{
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+#contact-links a{
+    color: white;
+    text-decoration: none;
+    font-size: calc(15px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .v-img img{

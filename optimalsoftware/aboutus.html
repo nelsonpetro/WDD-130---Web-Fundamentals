@@ -12,30 +12,46 @@
 <body>
     <header>
         <div id="header-content">
-            <a id="main-logo" href="index.html">
-                <img src="images/logo-banner-whiteb.png" alt="logo-banner">
-            </a>
+            <div id="main-logo">
+                <a id="main-logo-link" href="index.html">
+                    <img src="images/logo-banner-transp.png" alt="logo-banner">
+                </a>
+            </div>
             <nav id="main-menu">
-                <div id="menu-container">
-                    <ul id="menu" class="menu">
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="solutions.html">Solutions</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="aboutus.html">About Us</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="solutions.html">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
             </nav>
+            <form class="search">
+                <input type="text" placeholder="Search..." name="search" class="input-place">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="solutions.html">Solutions</a>
+                  <a href="aboutus.html">About Us</a>
+                  <form class="search-drop">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section id="hero-block">
             <div id="hero-img">
-                <img src="images/coding-man.jpg" alt="Coding man">
+                <img src="images/codingman.png" alt="Coding man">
             </div>
             <div id="hero-text">
                 <h2 class="hero-title">
@@ -46,11 +62,17 @@
                 </p>
                 <div id="hero-button">
                     <a href="index.html">
-                        Talk to Us
+                        <span class="w-span">
+                            &lt;
+                        </span>
+                        Talk to us
+                        <span class="w-span">
+                            /&gt;
+                        </span>
                     </a>
                 </div>
             </div>
-            <section>
+            <section id ="f-text-sec">
                 <div id="first-text">
                     <h2>
                         Your best partner for Software Solutions
@@ -60,77 +82,114 @@
                 </div>
             </section>
         </section>
-        <div id="why-os">
-            <section>
-                <h2>Why optimal software?</h2>
-                <div id="cards">
-                    <div class="card-content">
-                        <h3>Top talent of the World</h3>
-                        <p>We have the Top of IT Talent to fulfill the needs of every project.</p>
-                    </div>
-                    <div class="card-content">
-                        <h3>Time Zone alignment</h3>
-                        <p>Our developers can attend meetings and virtual calls, respond to email, and work alongside clients for seamless integration throughout the day.</p>
-                    </div>
-                    <div class="card-content">
-                        <h3>Experienced Team</h3>
-                        <p>All the members of our team are certified in every major technology and methodology. This significant knowledge base, coupled with extensive training allow us to succeed on every client challenge and project in a wide range of technologies.</p>
+        <div class="line-container">
+            <hr class="h-line">
+        </div>
+        <section id="why-os">
+            <h2>Why optimal software?</h2>
+            <div id="cards">
+                <div id="card1" class="card-content">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/world.png" alt="world">
+                          </div>
+                          <div class="flip-card-back">
+                            <h3>Top talent of the World</h3>
+                            <p>We have the Top of IT Talent to fulfill the needs of every project.</p>
+                          </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <div id="card2" class="card-content">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/clock.png" alt="world">
+                          </div>
+                          <div class="flip-card-back">
+                            <h3>Time Zone alignment</h3>
+                            <p>Our developers can attend meetings and virtual calls, respond to email, and work alongside clients for seamless integration throughout the day.</p>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="card3" class="card-content">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/teamhands.png" alt="world">
+                          </div>
+                          <div class="flip-card-back">
+                            <h3>Experienced Team</h3>
+                            <p>All the members of our team are certified in every major technology and methodology. This significant knowledge base, coupled with extensive training allow us to succeed on every client challenge and project in a wide range of technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line-container">
+            <hr class="h-line">
         </div>
         <div id="story">
             <h1>Our Story</h1>
-            <p>
-                In 2022 a group of young, motivated entrepreneurs and former software engineers discovered a fundamental market gap: untapped tech talent in Latin America. The tech world clamored for highly specialized software development services and engineering talent, and the region was flourishing with technological education and innovation. They decided to join forces and create a new project with a clear purpose: becoming the largest software outsourcing company in Latin America.
+            <p id="story1">
+                In 2022 a group of young, motivated entrepreneurs and former software engineers discovered a fundamental market gap: untapped tech talent in Latin America. The tech world clamored for highly specialized software development services and engineering talent, and the region was flourishing with technological education and innovation. They decided to join forces and create a new project with a clear purpose:
             </p>
-            <p>
-                By establishing teams of experienced bilingual software engineers in major Latin American cities, they eliminated the obstacles of time zones and cultural differences with international clients and focused on delivering unique technological solutions to drive business growth.
+            <p id="story2">
+                <span id="story-span">becoming the largest software outsourcing company in Latin America.</span> By establishing teams of experienced bilingual software engineers in major Latin American cities, they eliminated the obstacles of time zones and cultural differences with international clients and focused on delivering unique technological solutions to drive business growth.
             </p>
         </div>
+        <div class="line-container">
+            <hr class="h-line">
+        </div>
         <div id="values">
-            <div id="efficiency">
-                <div class="v-text">
-                    <h3>Efficiency</h3>
-                    <p>
-                        We constantly assess our systems and processes to learn how to get things done in the smartest way for our clients and our business.
-                    </p>
+            <h1>Our Values</h1>
+            <div id="v-cards">
+                <div id="efficiency">
+                    <div class="v-text">
+                        <h3>Efficiency</h3>
+                        <p>
+                            We constantly assess our systems and processes to learn how to get things done in the smartest way for our clients and our business.
+                        </p>
+                    </div>
+                    <div class="v-img">
+                        <img src="images/efficiency.png" alt="Efficient woman">
+                    </div>
                 </div>
-                <div class="v-img">
-                    <img src="images/efficiency.png" alt="Efficient woman">
+                <div id="twork">
+                    <div class="v-text">
+                        <h3>Teamwork & Collaboration</h3>
+                        <p>
+                            We leverage our collective genius by empowering the talented individuals on our teams to make decisions.
+                        </p>
+                    </div>
+                    <div class="v-img">
+                        <img src="images/teamwork.png" alt="Team working">
+                    </div>
                 </div>
-            </div>
-            <div id="twork">
-                <div class="v-text">
-                    <h3>Teamwork & Collaboration</h3>
-                    <p>
-                        We leverage our collective genius by empowering the talented individuals on our teams to make decisions.
-                    </p>
+                <div id="client">
+                    <div class="v-text">
+                        <h3>Client Value Creation</h3>
+                        <p>
+                            We focus on our clients’ business drivers to deliver maximum value and exceed their expectations.
+                        </p>
+                    </div>
+                    <div class="v-img">
+                        <img src="images/client.png" alt="Client">
+                    </div>
                 </div>
-                <div class="v-img">
-                    <img src="images/teamwork.png" alt="Team working">
-                </div>
-            </div>
-            <div id="client">
-                <div class="v-text">
-                    <h3>Client Value Creation</h3>
-                    <p>
-                        We focus on our clients’ business drivers to deliver maximum value and exceed their expectations.
-                    </p>
-                </div>
-                <div class="v-img">
-                    <img src="images/client.png" alt="Client">
-                </div>
-            </div>
-            <div id="transparency">
-                <div class="v-text">
-                    <h3>Transparency</h3>
-                    <p>
-                        By staying clear about our goals and motivations, we build trust with our clients and teams—the foundation of great teamwork.
-                    </p>
-                </div>
-                <div class="v-img">
-                    <img src="images/transparency.png" alt="Transparency">
+                <div id="transparency">
+                    <div class="v-text">
+                        <h3>Transparency</h3>
+                        <p>
+                            By staying clear about our goals and motivations, we build trust with our clients and teams—the foundation of great teamwork.
+                        </p>
+                    </div>
+                    <div class="v-img">
+                        <img src="images/transparency.png" alt="Transparency">
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,47 +198,60 @@
         <div id="footer-content">
             <div id="footer-nav">
                 <nav id="footer-links">
-                    <ul id="links" class="menu">
-                        
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="solutions.html">Solutions</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="aboutus.html">About Us</a>
-                        </li>
-                    </ul>
+                    <a href="index.html"><span class="f-span">&lt;</span>Home<span class="f-span">/&gt;</span></a>
+                    <a href="solutions.html"><span class="f-span">&lt;</span>Solutions<span class="f-span">/&gt;</span></a>
+                    <a href="aboutus.html"><span class="f-span">&lt;</span>About Us<span class="f-span">/&gt;</span></a>
                 </nav>
             </div>
             <div id="service-links">
                 <div id="footer-logo">
                     <a id="logo-link" href="index.html">
-                        <img src="images/logo-banner-whiteb.png" alt="logo-banner">
+                        <img src="images/logo-banner-transp.png" alt="logo-banner">
                     </a>
                     <p>Optimal Software &copy; 2022</p>
                 </div>
             </div>
             <div id="contact-links">
-                <div class="contact-links">
-                    <a href="https://www.facebook.com/nelsonpetrodoria/" target="_blank" class="btn contact-det">
-                        <i class="fab fa-facebook-square"></i>
-                        Facebook
-                    </a>
-                    <a href="https://twitter.com/NelsonPetro_" target="_blank" class="btn contact-det">
-                        <i class="fab fa-twitter"></i>
-                        Twitter
-                    </a>
-                    <a href="https://www.freecodecamp.org/fcc30470184-f799-445f-b993-b7d6e1d6c1c1" target="_blank" class="btn contact-det">
-                        <i class="fas fa-code"></i>
-                        FreeCodeCamp Profile
-                    </a>
-                    <a href="" target="_blank" class="btn contact-det">
-                        <i class="fas fa-at"></i>
-                        Gmail
-                    </a>
-                </div>
+                <a href="https://www.facebook.com/nelsonpetrodoria/" target="_blank" class="btn contact-det">
+                    <span class="f-span">
+                        &lt;
+                    </span>
+                    <i class="fab fa-facebook-square"></i>
+                    Facebook
+                    <span class="f-span">
+                        /&gt;
+                    </span>
+                </a>
+                <a href="https://twitter.com/NelsonPetro_" target="_blank" class="btn contact-det">
+                    <span class="f-span">
+                        &lt;
+                    </span>
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                    <span class="f-span">
+                        /&gt;
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/nelsonpetro/" target="_blank" class="btn contact-det">
+                    <span class="f-span">
+                        &lt;
+                    </span>
+                    <i class="fab fa-linkedin"></i>
+                    Linkedin
+                    <span class="f-span">
+                        /&gt;
+                    </span>
+                </a>
+                <a href="" target="_blank" class="btn contact-det">
+                    <span class="f-span">
+                            &lt;
+                    </span>
+                    <i class="fas fa-at"></i>
+                    Gmail
+                    <span class="f-span">
+                        /&gt;
+                    </span>
+                </a>            
             </div>
         </div>
     </footer>

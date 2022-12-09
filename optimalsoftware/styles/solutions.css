@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
-    background-color: white;
     font-family: 'Source Code Pro', monospace;
     background-color: #000;
     background-image: linear-gradient(45deg, #333333 0%, #012626 100%);
@@ -29,36 +30,44 @@ body{
 }
 
 #header-content nav{
-    font-family: 'Fira Code', monospace;
-    display: flex;
-    font-size: calc(16px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-    list-style-type: none;
+    width: 100%;
 }
 
-#header-content nav a{
-    color: white;
-    text-decoration: none;
-    padding: min(30px,max(calc( (100vw - 1310px) / 1.5 + 15px ),15px));
-    width: min(200px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
-    text-align: center;
-    cursor: pointer;
-    border-radius: 8px;
+#header-content nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: min(15px,max(calc( (100vw - 900px) / 1.5 + 8px ),8px));;
+    text-align: center
+}
+
+#header-content nav ul li{
+    padding: min(25px,max(calc( (100vw - 900px) / 1.5 + 10px ),10px));
+    list-style-type: none;
     transition: ease-in-out 0.2s;
 }
 
-#header-content nav a:hover{
+#header-content nav ul li a{
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: calc(8px + (24 - 8) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;    
+}
+
+#header-content nav ul li:hover{
+    cursor: pointer;
+    border-radius: 8px;
     background-color: #FF725E;
     transition: color 0.2s ease-out;
 }
 
 #main-logo{
+    padding: min(20px,max(calc( (100vw - 900px) / 1.5 + 10px ),10px));
     justify-self: start;
     position: relative;
-    padding-left: min(10px,max(calc( (100vw - 1310px) / 1.5 + 15px ),15px));
 }
 
 #main-logo img{
-    max-width: min(320px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+    max-width: min(280px,max(calc( (100vw - 400px) / 3.5714285714 + 164px ),164px));
 }
 
 form.search input[type=text] {
@@ -84,6 +93,47 @@ form.search button {
     cursor: pointer;
 }
 
+input::placeholder{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    display: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(45deg, #333333 0%, #012626 100%);
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 #hero-block{
     margin-top: 10vmin;
     height: 100vmin;
