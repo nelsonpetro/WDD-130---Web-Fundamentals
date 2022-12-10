@@ -1931,7 +1931,7 @@ input::placeholder{
     }
 
     #main-logo img{
-        max-width: min(350px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
+        max-width: min(300px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
     }
 
     #main-menu{
