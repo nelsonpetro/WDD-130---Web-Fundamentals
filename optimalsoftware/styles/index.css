@@ -365,7 +365,8 @@ input::placeholder{
     }
 
     .dropdown-content {
-        min-width: 160px;
+        right: 0;
+        max-width: 450px;
     }
     
     .dropdown-content a {
@@ -396,7 +397,7 @@ input::placeholder{
     }
 
     form.search-drop input[type=text] {
-        max-width: min(300px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(360px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
         font-size: 45px;
         border: 1px solid white;
@@ -406,7 +407,7 @@ input::placeholder{
     }
     
     form.search-drop button {
-        max-width: min(100px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(90px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         float: left;
         width: 20%;
         padding: 10px;
@@ -417,6 +418,7 @@ input::placeholder{
         border-left: none;
         cursor: pointer;
     }
+
 
     #second-part{
         margin-top: 100px;
@@ -603,35 +605,41 @@ input::placeholder{
         grid-template-columns: 1fr 2fr;
     }
 
-    #main-menu{
-        display: none;
+    #main-logo img{
+        max-width: min(800px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
     }
 
-    #main-logo{
-        padding: min(10px,max(calc( (100vw - 100px) / 1.5 + 10px ),10px));
+    #main-menu{
+        display: none;
     }
 
     .search{
         display: none;
     }
-    
-    .dropdown{
-        width: 100%;
-        text-align: right;
-    }
 
+    .dropdown-content {
+        right: 0;
+        max-width: 300px;
+    }
+    
     .dropdown-content a {
+        font-size: 30px;
         float: none;
         color: white;
-        padding: 12px 16px;
+        padding: 35px 40px 35px 20px;
         text-decoration: none;
         display: block;
         text-align: left;
     }
 
+    .dropdown{
+        width: 100%;
+        text-align: right;
+    }
+
     .dropdown .dropbtn {
         display: inline-block;
-        font-size: 30px;
+        font-size: 60px;
         border: none;
         outline: none;
         color: white;
@@ -642,9 +650,9 @@ input::placeholder{
     }
 
     form.search-drop input[type=text] {
-        max-width: min(240px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(250px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
-        font-size: 18px;
+        font-size: 30px;
         border: 1px solid white;
         float: left;
         width: 80%;
@@ -652,13 +660,13 @@ input::placeholder{
     }
     
     form.search-drop button {
-        max-width: min(50px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(100px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         float: left;
         width: 20%;
         padding: 10px;
         background: #FF725E;
         color: white;
-        font-size: 18px;
+        font-size: 30px;
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
@@ -832,12 +840,32 @@ input::placeholder{
         grid-template-columns: 1fr 2fr;
     }
 
+    #main-logo img{
+        max-width: min(250px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
+    }
+
     #main-menu{
         display: none;
     }
 
     .search{
         display: none;
+    }
+
+    .dropdown-content {
+        right: 0;
+        float: right;
+        max-width: 230px;
+    }
+    
+    .dropdown-content a {
+        font-size: 20px;
+        float: none;
+        color: white;
+        padding: 20px 30px 20px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
     }
 
     .dropdown{
@@ -851,16 +879,16 @@ input::placeholder{
         border: none;
         outline: none;
         color: white;
-        padding: 8px;
+        padding: 5px;
         background-color: inherit;
         font-family: inherit; 
         margin: 0; 
     }
 
     form.search-drop input[type=text] {
-        max-width: min(200px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(250px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
-        font-size: 14px;
+        font-size: 20px;
         border: 1px solid white;
         float: left;
         width: 80%;
@@ -868,13 +896,13 @@ input::placeholder{
     }
     
     form.search-drop button {
-        max-width: min(50px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(100px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         float: left;
         width: 20%;
         padding: 10px;
         background: #FF725E;
         color: white;
-        font-size: 14px;
+        font-size: 20px;
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
@@ -1049,12 +1077,32 @@ input::placeholder{
         grid-template-columns: 1fr 2fr;
     }
 
+    #main-logo img{
+        max-width: min(250px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
+    }
+
     #main-menu{
         display: none;
     }
 
     .search{
         display: none;
+    }
+
+    .dropdown-content {
+        right: 0;
+        float: right;
+        max-width: 230px;
+    }
+    
+    .dropdown-content a {
+        font-size: 15px;
+        float: none;
+        color: white;
+        padding: 10px 30px 10px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
     }
 
     .dropdown{
@@ -1068,16 +1116,16 @@ input::placeholder{
         border: none;
         outline: none;
         color: white;
-        padding: 8px;
+        padding: 5px;
         background-color: inherit;
         font-family: inherit; 
         margin: 0; 
     }
 
     form.search-drop input[type=text] {
-        max-width: min(180px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(250px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
-        font-size: 14px;
+        font-size: 15px;
         border: 1px solid white;
         float: left;
         width: 80%;
@@ -1085,17 +1133,18 @@ input::placeholder{
     }
     
     form.search-drop button {
-        max-width: min(50px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(100px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         float: left;
         width: 20%;
         padding: 10px;
         background: #FF725E;
         color: white;
-        font-size: 14px;
+        font-size: 15px;
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
     }
+
 
     #second-part{
         margin-top: 30px;
@@ -1265,13 +1314,8 @@ input::placeholder{
         grid-template-columns: 1fr 2fr;
     }
 
-    #main-logo{
-        padding: 10px;
-    }
-    
     #main-logo img{
-        padding: 0;
-        max-width: min(250px,max(calc( (100vw - 200px) / 2 + 250px ),250px));
+        max-width: min(300px,max(calc( (100vw - 300px) / 2 + 164px ),164px));
     }
 
     #main-menu{
@@ -1283,14 +1327,15 @@ input::placeholder{
     }
 
     .dropdown-content {
-        width: 100vw;
+        right: 0;
+        max-width: 300px;
     }
     
     .dropdown-content a {
-        font-size: 30px;
+        font-size: 20px;
         float: none;
         color: white;
-        padding: 25px 100px 25px 10px;
+        padding: 15px 40px 15px 20px;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -1303,20 +1348,20 @@ input::placeholder{
 
     .dropdown .dropbtn {
         display: inline-block;
-        font-size: 30px;
+        font-size: 40px;
         border: none;
         outline: none;
         color: white;
-        padding-right: 30px;
+        padding: 8px;
         background-color: inherit;
         font-family: inherit; 
         margin: 0; 
     }
 
     form.search-drop input[type=text] {
-        max-width: min(300px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
+        max-width: min(250px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
         border: 1px solid white;
         float: left;
         width: 80%;
@@ -1330,12 +1375,12 @@ input::placeholder{
         padding: 10px;
         background: #FF725E;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
     }
-
+    
     #second-part{
         margin-top: 100px;
         height: 100%;
