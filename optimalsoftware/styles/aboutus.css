@@ -196,7 +196,6 @@ input::placeholder{
 #f-text-sec{
     margin-top: 40px;
     grid-column: 1/3;
-    grid: 2/3;
     text-align: center;
 }
 
@@ -638,7 +637,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -944,7 +942,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -1251,7 +1248,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -1558,7 +1554,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -1869,7 +1864,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -2176,7 +2170,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
@@ -2483,7 +2476,6 @@ input::placeholder{
     #f-text-sec{
         grid-column: 1/3;
         margin-top: 40px;
-        grid: 2/3;
         text-align: center;
     }
     
