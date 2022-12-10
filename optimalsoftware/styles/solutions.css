@@ -53,11 +53,8 @@ body{
     text-decoration: none;    
 }
 
-#header-content nav ul li:hover{
-    cursor: pointer;
-    border-radius: 8px;
-    background-color: #FF725E;
-    transition: color 0.2s ease-out;
+#header-content nav ul li a:hover{
+    color:#FF725E;
 }
 
 #main-logo{
