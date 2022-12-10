@@ -718,7 +718,7 @@ input::placeholder{
     }
     
     .dropdown-content a {
-        font-size: 25px;
+        font-size: 20px;
         float: none;
         color: white;
         padding: 35px 40px 35px 20px;
@@ -1643,10 +1643,10 @@ input::placeholder{
     }
     
     .dropdown-content a {
-        font-size: 50px;
+        font-size: 30px;
         float: none;
         color: white;
-        padding: 35px 40px 35px 20px;
+        padding: 15px 40px 15px 20px;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -1672,7 +1672,7 @@ input::placeholder{
     form.search-drop input[type=text] {
         max-width: min(360px,max(calc( (100vw - 100px) / 3 + 164px ),164px));
         padding: 10px;
-        font-size: 45px;
+        font-size: 30px;
         border: 1px solid white;
         float: left;
         width: 80%;
@@ -1686,7 +1686,7 @@ input::placeholder{
         padding: 10px;
         background: #FF725E;
         color: white;
-        font-size: 45px;
+        font-size: 30px;
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
